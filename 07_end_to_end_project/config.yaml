@@ -1,0 +1,30 @@
+# Configuration for End-to-End Project
+
+data:
+  input_path: '/data/input/'
+  output_path: '/data/output/'
+
+model:
+  n_estimators: 100
+  max_depth: 10
+
+training:
+  batch_size: 32
+  learning_rate: 0.001
+
+mlops:
+  tracking_uri: 'http://mlops.example.com'
+  experiment_name: 'Tech Deck ML Ops Experiment'
+
+cloud:
+  azure:
+    client_id: '<your_azure_client_id>'
+    client_secret: '<your_azure_client_secret>'
+    subscription_id: '<your_azure_subscription_id>'
+  aws:
+    access_key_id: '<your_aws_access_key_id>'
+    secret_access_key: '<your_aws_secret_access_key>'
+
+monitoring:
+  threshold_accuracy: 0.95
+  threshold_loss: 0.1
